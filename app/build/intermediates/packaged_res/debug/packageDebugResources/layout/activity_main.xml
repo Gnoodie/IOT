@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Mức cảnh báo (card lớn với ProgressBar) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardWarning"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="12dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:id="@+id/warningLayout"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:indeterminate="true"
+                    android:visibility="visible"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/txtWarning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="AN TOÀN"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Nhiệt độ (card nhỏ với ProgressBar nhiệt kế) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTemp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp"
+            app:layout_constraintTop_toBottomOf="@id/cardWarning"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/cardHum"
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_blue"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nhiệt độ"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="sans-serif" />
+
+                <ProgressBar
+                    android:id="@+id/tempProgressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:max="40"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_temperature"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/txtTemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="-- °C"
+                    android:textSize="28sp"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Độ ẩm (card nhỏ với ProgressBar vòng tròn) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardHum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp"
+            app:layout_constraintTop_toBottomOf="@id/cardWarning"
+            app:layout_constraintStart_toEndOf="@id/cardTemp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_blue"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Độ ẩm"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="sans-serif" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <ProgressBar
+                        android:id="@+id/humProgressBar"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progress_humidity" />
+
+                    <TextView
+                        android:id="@+id/txtHum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="-- %"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-medium" />
+                </FrameLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Bảng thông tin phụ -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp"
+            app:layout_constraintTop_toBottomOf="@id/cardTemp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thông tin chi tiết"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@drawable/gradient_light_blue"
+                    android:padding="12dp"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:id="@+id/txtTableContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đang tải..."
+                    android:textSize="16sp"
+                    android:gravity="start"
+                    android:lineSpacingExtra="6dp"
+                    android:maxLines="10"
+                    android:ellipsize="none"
+                    android:scrollbars="vertical"
+                    android:padding="12dp"
+                    android:textColor="#424242"
+                    android:fontFamily="sans-serif" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Nút bật/tắt thông báo -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnToggleAlert"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ĐANG BẬT"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@color/green_button"
+            app:cornerRadius="12dp"
+            app:rippleColor="#80FFFFFF"
+            app:layout_constraintTop_toBottomOf="@id/cardTable"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="8dp" />
+
+        <!-- Biểu đồ số liệu gần đây (LineChart với tiêu đề) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardChart"
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="12dp"
+            app:layout_constraintTop_toBottomOf="@id/btnToggleAlert"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/chartTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Biểu đồ thống kê nhiệt độ và độ ẩm"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@drawable/gradient_light_blue"
+                    android:padding="12dp"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="sans-serif-medium" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnUpdateChart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center"
+                    android:text="CẬP NHẬT BIỂU ĐỒ"
+                    android:textColor="@android:color/white"
+                    app:backgroundTint="@color/blue_button"
+                    app:rippleColor="@android:color/white" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

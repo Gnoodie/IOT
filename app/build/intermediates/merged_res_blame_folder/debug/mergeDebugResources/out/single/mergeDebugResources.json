@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-debug-33:\\drawable_ic_notification.png.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-main-35:\\drawable\\ic_notification.png"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-debug-33:\\drawable_circle_background_orange.png.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-main-35:\\drawable\\circle_background_orange.png"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-debug-33:\\drawable_circle_background.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-main-35:\\drawable\\circle_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-debug-33:\\drawable_gradient_green.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-main-35:\\drawable\\gradient_green.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-debug-33:\\drawable_progress_temperature.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-main-35:\\drawable\\progress_temperature.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-debug-33:\\drawable_gradient_red.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-main-35:\\drawable\\gradient_red.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-debug-33:\\raw_alert.mp3.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-main-35:\\raw\\alert.mp3"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-debug-33:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-main-35:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-debug-33:\\drawable_progress_humidity.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-main-35:\\drawable\\progress_humidity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-debug-33:\\drawable_transition_warning.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-main-35:\\drawable\\transition_warning.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-debug-33:\\drawable_circle_background_red.png.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-main-35:\\drawable\\circle_background_red.png"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-debug-33:\\drawable_gradient_blue_button.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-main-35:\\drawable\\gradient_blue_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-debug-33:\\drawable_gradient_light_blue.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-main-35:\\drawable\\gradient_light_blue.xml"
+    },
+    {
+        "merged": "com.example.iot.app-debug-33:/drawable_progress_humidity.xml.flat",
+        "source": "com.example.iot.app-main-35:/drawable/progress_humidity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-debug-33:\\drawable_gradient_orange.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-main-35:\\drawable\\gradient_orange.xml"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-debug-33:\\drawable_circle_background_blue.png.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-main-35:\\drawable\\circle_background_blue.png"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-debug-33:\\drawable_circle_background_green.png.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-main-35:\\drawable\\circle_background_green.png"
+    },
+    {
+        "merged": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-debug-33:\\drawable_gradient_blue.xml.flat",
+        "source": "C:\\Users\\Admin\\.gradle\\daemon\\9.0-milestone-1\\com.example.iot.app-main-35:\\drawable\\gradient_blue.xml"
+    }
+]

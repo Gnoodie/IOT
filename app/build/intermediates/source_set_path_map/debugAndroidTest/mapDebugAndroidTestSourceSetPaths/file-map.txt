@@ -1,0 +1,4 @@
+com.example.iot.test.app-androidTest-0 D:\DOWNLOAD\IOT_android\IOT_project\app\build\generated\res\resValues\androidTest\debug
+com.example.iot.test.app-mergeDebugAndroidTestResources-1 D:\DOWNLOAD\IOT_android\IOT_project\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.iot.test.app-mergeDebugAndroidTestResources-2 D:\DOWNLOAD\IOT_android\IOT_project\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.iot.test.app-debugAndroidTest-3 D:\DOWNLOAD\IOT_android\IOT_project\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
